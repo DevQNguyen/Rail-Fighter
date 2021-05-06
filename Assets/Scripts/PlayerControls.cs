@@ -21,11 +21,13 @@ public class PlayerControls : MonoBehaviour
 
     void OnEnable()
     {
+        // Enable Input System
         movement.Enable();
     }
 
     void OnDisable()
     {
+        // Disable Input System
         movement.Disable();
     }
 
@@ -36,22 +38,7 @@ public class PlayerControls : MonoBehaviour
         ProcessRotation();
     }
 
-    void ProcessRotation()
-    {
-        float pitchDueToLocation = transform.localPosition.y * positionPitchFactor;
-        float rollDueToLocation = transform.localPosition.x * positionRollFactor;
-
-        float pitchDueToControl = yThrow * pitchControlFactor;
-        float rollDueToControl = xThrow * rollControlFactor;
-        
-        float pitch = pitchDueToLocation + pitchDueToControl;
-        float yaw = transform.localPosition.x * positionYawFactor;
-        float roll = rollDueToLocation + rollDueToControl;
-
-        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
-    }
-
-    private void ProcessTranslation()
+    void ProcessTranslation()
     {
         // New Input System
         xThrow = movement.ReadValue<Vector2>().x;
@@ -75,9 +62,26 @@ public class PlayerControls : MonoBehaviour
         // Apply clamp to the raw positions
         float xClamped = Mathf.Clamp(rawXPos, -xRange, xRange);
         float yClamped = Mathf.Clamp(rawYPos, -yRange, yRange);
+        Debug.Log($"xClamped: {xClamped} - yClamped: {yClamped}");
 
         // Apply new position to transform
         transform.localPosition = new Vector3(xClamped, yClamped, transform.localPosition.z);
+        Debug.Log($"LocalPosition: {transform.localPosition}");
+    }
+
+    void ProcessRotation()
+    {
+        float pitchDueToLocation = transform.localPosition.y * positionPitchFactor;
+        float rollDueToLocation = transform.localPosition.x * positionRollFactor;
+
+        float pitchDueToControl = yThrow * pitchControlFactor;
+        float rollDueToControl = xThrow * rollControlFactor;
+
+        float pitch = pitchDueToLocation + pitchDueToControl;
+        float yaw = transform.localPosition.x * positionYawFactor;
+        float roll = rollDueToLocation + rollDueToControl;
+
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 }
 
