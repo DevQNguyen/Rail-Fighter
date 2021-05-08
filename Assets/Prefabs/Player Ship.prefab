@@ -271,7 +271,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 57125df2e9117bb40a32c83b6390c301, type: 2}
+  - {fileID: 2100000, guid: d58bf68b17f9a4240aaeb5c200c9a12c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -363,9 +363,9 @@ MonoBehaviour:
       m_Flags: 0
   controlSpeed: 20
   xRange: 20
-  yRange: 8
+  yRange: 10
   positionPitchFactor: -3
   positionYawFactor: 2
   positionRollFactor: -2
-  pitchControlFactor: -15
-  rollControlFactor: -20
+  pitchControlFactor: -10
+  rollControlFactor: -15
