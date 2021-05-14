@@ -104,9 +104,7 @@ public class PlayerControls : MonoBehaviour
             foreach (GameObject laser in lasers)
             {
                 // Reference particle system
-                var laserEmission = laser.GetComponent<ParticleSystem>();
-                Debug.Log($"Before Firing Laser: {laserEmission}");
-                laserEmission.Play();
+                laser.GetComponent<ParticleSystem>().Play();
             }
         }
     }
