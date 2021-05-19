@@ -9,16 +9,28 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] InputAction firingAction;
 
     [SerializeField] GameObject[] lasers;
-
+    
+    [Header("General Movement Settings")]
+    [Tooltip("How fast player ship moves up and down.")]
     [SerializeField] float controlSpeed = 20f;
+    [Tooltip("Screen movement limit on x-axis.")]
     [SerializeField] float xRange = 20f;
-    [SerializeField] float yRange = 8f;
+    [Tooltip("Screen movement limit on y-axis.")]
+    [SerializeField] float yRange = 10f;
 
+    [Header("Screen Position Tuning")]
+    [Tooltip("Pitch factor applied to transform's local y location.")]
     [SerializeField] float positionPitchFactor = -3f;
+    [Tooltip("Yaw factor applied to transform's local x location.")]
     [SerializeField] float positionYawFactor = 2f;
+    [Tooltip("Roll factor applied to transform's local x location.")]
     [SerializeField] float positionRollFactor = -2f;
-    [SerializeField] float pitchControlFactor = -15f;
-    [SerializeField] float rollControlFactor = -20f;
+    
+    [Header("Player Input Tuning")]
+    [Tooltip("Pitch factor applied y-throw input.")]
+    [SerializeField] float pitchControlFactor = -10f;
+    [Tooltip("Roll factor applied to x-throw input.")]
+    [SerializeField] float rollControlFactor = -15f;
 
     float xThrow, yThrow;
 
