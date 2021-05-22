@@ -661,6 +661,7 @@ GameObject:
   - component: {fileID: 1207477190}
   - component: {fileID: 1207477189}
   - component: {fileID: 1207477188}
+  - component: {fileID: 1207477192}
   m_Layer: 0
   m_Name: Bridge01
   m_TagString: Obstacle
@@ -744,6 +745,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 17.768, y: 27.407, z: 0}
+--- !u!114 &1207477192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207477187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6a8b7c4cc40b24b8c228d3bb2ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1669007931
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,6 +769,7 @@ GameObject:
   - component: {fileID: 1669007934}
   - component: {fileID: 1669007933}
   - component: {fileID: 1669007932}
+  - component: {fileID: 1669007936}
   m_Layer: 0
   m_Name: Bridge02
   m_TagString: Obstacle
@@ -839,6 +853,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 10.81, y: 23.935, z: 0}
+--- !u!114 &1669007936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669007931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6a8b7c4cc40b24b8c228d3bb2ca4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1950947274
 GameObject:
   m_ObjectHideFlags: 0
