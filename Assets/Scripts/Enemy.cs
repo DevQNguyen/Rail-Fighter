@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private void OnParticleCollision(GameObject other)
+    void OnParticleCollision(GameObject other)
     {
         Debug.Log($"[{this.name}] hit by [{other.name}]");
         Destroy(this.gameObject);

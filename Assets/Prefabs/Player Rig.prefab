@@ -194,6 +194,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1666697391694617943, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 5212771979763822076}
+    - target: {fileID: 1666697391694617943, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+      propertyPath: reloadDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666697391694617943, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+      propertyPath: explosionVFX
+      value: 
+      objectReference: {fileID: 5212771979763822050}
+    - target: {fileID: 1666697391694617943, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+      propertyPath: explosionParticles
+      value: 
+      objectReference: {fileID: 5212771979763822050}
+    - target: {fileID: 2850435218496351078, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+      propertyPath: m_Size.z
+      value: 12.179366
+      objectReference: {fileID: 0}
+    - target: {fileID: 2850435218496351078, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+      propertyPath: m_Center.x
+      value: -6.4398814e-16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2850435218496351078, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+      propertyPath: m_Center.z
+      value: 0.2046833
+      objectReference: {fileID: 0}
     - target: {fileID: 2850435218496351078, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -228,6 +256,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5220462457244976146, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978395747909271379, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+      propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6441700618688020372, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
@@ -430,6 +462,10 @@ PrefabInstance:
       propertyPath: firingAction.m_SingletonActionBindings.Array.data[1].m_Interactions
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7828503195002360496, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
 --- !u!4 &2665055823906062084 stripped
@@ -455,5 +491,15 @@ GameObject:
 --- !u!198 &7818773011789017503 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5220462457169284813, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+  m_PrefabInstance: {fileID: 2662491952293805906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5212771979763822076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7828503195002360494, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+  m_PrefabInstance: {fileID: 2662491952293805906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5212771979763822050 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7828503195002360496, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
   m_PrefabInstance: {fileID: 2662491952293805906}
   m_PrefabAsset: {fileID: 0}
