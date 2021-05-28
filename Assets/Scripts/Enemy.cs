@@ -4,12 +4,47 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // serialize particle system for explosion
     [SerializeField] GameObject enemyExplosionPrefab;
     [SerializeField] Transform spawnedObjects;
+    ScoreBoard scoreBoard;
 
+    [SerializeField] int enemyScoreValue;
 
-    void OnParticleCollision(GameObject other)
+    private void Start()
+    {
+        // Reference ScoreBoard object
+        scoreBoard = FindObjectOfType<ScoreBoard>();
+        if (scoreBoard == null)
+        {
+            Debug.Log("ScoreBoard object not found.");
+        }
+    }
+
+    private void OnParticleCollision(GameObject other)
+    {
+        ProcessScore();
+        Debug.Log($"Enemy value: {enemyScoreValue}");
+        EnemyDestroySequence();
+    }
+
+    private void ProcessScore()
+    {
+        SetEnemyScoreValue();
+        scoreBoard.AddScore(enemyScoreValue);
+    }
+
+    private void SetEnemyScoreValue()
+    {
+        if (gameObject.CompareTag("Enemy3"))
+        {
+            enemyScoreValue = 3;
+        } else
+        {
+            enemyScoreValue = 5;
+        }
+    }
+
+    private void EnemyDestroySequence()
     {
         // Grab reference to explosion prefab gameObject
         GameObject instantiatedExplosion = Instantiate(enemyExplosionPrefab, transform.position, Quaternion.identity);
@@ -19,5 +54,7 @@ public class Enemy : MonoBehaviour
         Destroy(this.gameObject);
     }
 }
+
+
 
 

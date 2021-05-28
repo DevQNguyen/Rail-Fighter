@@ -237,6 +237,10 @@ PrefabInstance:
       value: EnemyCapsule (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6413455364618082510, guid: 842563bff5fb79c44863a8ab65b8ec2f, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 236053562}
+    - target: {fileID: 6413455364618082510, guid: 842563bff5fb79c44863a8ab65b8ec2f, type: 3}
       propertyPath: spawnedObjects
       value: 
       objectReference: {fileID: 692943250}
@@ -437,7 +441,7 @@ GameObject:
   - component: {fileID: 196647631}
   m_Layer: 0
   m_Name: EnemySphere02
-  m_TagString: Enemy
+  m_TagString: Enemy5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -551,6 +555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyExplosionPrefab: {fileID: 2011413467132551535, guid: 4ed5e680143c62e4eb9ca3abb2c63c4b, type: 3}
   spawnedObjects: {fileID: 692943250}
+  scoreManager: {fileID: 236053562}
 --- !u!1001 &200096172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -603,6 +608,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 619354813768244883, guid: 8db5ffa9ab8a2d4429c9dfee690dac99, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 236053562}
+    - target: {fileID: 619354813768244883, guid: 8db5ffa9ab8a2d4429c9dfee690dac99, type: 3}
       propertyPath: spawnedObjects
       value: 
       objectReference: {fileID: 692943250}
@@ -617,6 +626,49 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 619354813768244880, guid: 8db5ffa9ab8a2d4429c9dfee690dac99, type: 3}
   m_PrefabInstance: {fileID: 200096172}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &236053562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 236053564}
+  - component: {fileID: 236053563}
+  m_Layer: 0
+  m_Name: ScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &236053563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236053562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb939edc71fbb479b7d5b3c6a0bab4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &236053564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236053562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &322727163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -668,6 +720,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 619354813768244883, guid: 8db5ffa9ab8a2d4429c9dfee690dac99, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 236053562}
     - target: {fileID: 619354813768244883, guid: 8db5ffa9ab8a2d4429c9dfee690dac99, type: 3}
       propertyPath: spawnedObjects
       value: 
@@ -734,6 +790,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 619354813768244883, guid: 8db5ffa9ab8a2d4429c9dfee690dac99, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 236053562}
     - target: {fileID: 619354813768244883, guid: 8db5ffa9ab8a2d4429c9dfee690dac99, type: 3}
       propertyPath: spawnedObjects
       value: 
@@ -884,6 +944,10 @@ PrefabInstance:
       value: EnemyCapsule
       objectReference: {fileID: 0}
     - target: {fileID: 6413455364618082510, guid: 842563bff5fb79c44863a8ab65b8ec2f, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 236053562}
+    - target: {fileID: 6413455364618082510, guid: 842563bff5fb79c44863a8ab65b8ec2f, type: 3}
       propertyPath: spawnedObjects
       value: 
       objectReference: {fileID: 692943250}
@@ -990,6 +1054,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 619354813768244883, guid: 8db5ffa9ab8a2d4429c9dfee690dac99, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 236053562}
+    - target: {fileID: 619354813768244883, guid: 8db5ffa9ab8a2d4429c9dfee690dac99, type: 3}
       propertyPath: spawnedObjects
       value: 
       objectReference: {fileID: 692943250}
@@ -1020,6 +1088,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCapsule (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6413455364618082510, guid: 842563bff5fb79c44863a8ab65b8ec2f, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 236053562}
     - target: {fileID: 6413455364618082510, guid: 842563bff5fb79c44863a8ab65b8ec2f, type: 3}
       propertyPath: spawnedObjects
       value: 
@@ -1282,6 +1354,10 @@ PrefabInstance:
       value: EnemyCapsule (2)
       objectReference: {fileID: 0}
     - target: {fileID: 6413455364618082510, guid: 842563bff5fb79c44863a8ab65b8ec2f, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 236053562}
+    - target: {fileID: 6413455364618082510, guid: 842563bff5fb79c44863a8ab65b8ec2f, type: 3}
       propertyPath: spawnedObjects
       value: 
       objectReference: {fileID: 692943250}
@@ -1347,6 +1423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCapsule (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6413455364618082510, guid: 842563bff5fb79c44863a8ab65b8ec2f, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 236053562}
     - target: {fileID: 6413455364618082510, guid: 842563bff5fb79c44863a8ab65b8ec2f, type: 3}
       propertyPath: spawnedObjects
       value: 
@@ -1417,7 +1497,7 @@ GameObject:
   - component: {fileID: 1950947275}
   m_Layer: 0
   m_Name: Capsule (1)
-  m_TagString: Untagged
+  m_TagString: Enemy3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1436,6 +1516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyExplosionPrefab: {fileID: 2011413467132551535, guid: 4ed5e680143c62e4eb9ca3abb2c63c4b, type: 3}
   spawnedObjects: {fileID: 692943250}
+  scoreManager: {fileID: 236053562}
 --- !u!136 &1950947276
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1570,6 +1651,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 619354813768244883, guid: 8db5ffa9ab8a2d4429c9dfee690dac99, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 236053562}
+    - target: {fileID: 619354813768244883, guid: 8db5ffa9ab8a2d4429c9dfee690dac99, type: 3}
       propertyPath: spawnedObjects
       value: 
       objectReference: {fileID: 692943250}
@@ -1647,6 +1732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCapsule
       objectReference: {fileID: 0}
+    - target: {fileID: 6413455364618082510, guid: 842563bff5fb79c44863a8ab65b8ec2f, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 236053562}
     - target: {fileID: 6413455364618082510, guid: 842563bff5fb79c44863a8ab65b8ec2f, type: 3}
       propertyPath: spawnedObjects
       value: 

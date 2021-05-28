@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6413455364618082510}
   m_Layer: 0
   m_Name: EnemyCapsule
-  m_TagString: Untagged
+  m_TagString: Enemy3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,3 +111,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyExplosionPrefab: {fileID: 2011413467132551535, guid: 4ed5e680143c62e4eb9ca3abb2c63c4b, type: 3}
   spawnedObjects: {fileID: 0}
+  scoreManager: {fileID: 0}

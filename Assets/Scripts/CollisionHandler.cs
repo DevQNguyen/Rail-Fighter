@@ -12,14 +12,14 @@ public class CollisionHandler : MonoBehaviour
     [Tooltip("Float value for number of seconds to delay before reloading scene.")]
     [SerializeField] float reloadDelay = 1f;
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         CrashSequence(other);
     }
 
-    void CrashSequence(Collider other)
+    private void CrashSequence(Collider other)
     {
-        // Play explosion particles
+        // Play Player Ship explosion particles
         explosionVFX.Play();
 
         // Destroy other gameObject
@@ -35,13 +35,13 @@ public class CollisionHandler : MonoBehaviour
         RestartSequence();
     }
 
-    void RestartSequence()
+    private void RestartSequence()
     {
         // Wait x sec, invoke ReloadScene()
         Invoke("ReloadScene", reloadDelay);
     }
 
-    void ReloadScene()
+    private void ReloadScene()
     {
         // Get current scene index
         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
