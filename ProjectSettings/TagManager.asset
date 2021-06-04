@@ -8,6 +8,12 @@ TagManager:
   - Obstacle
   - Enemy5
   - Enemy3
+  - Drago
+  - Hornet
+  - Manta
+  - Medusa
+  - Python
+  - Warhog
   layers:
   - Default
   - TransparentFX

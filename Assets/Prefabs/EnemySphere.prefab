@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 619354813768244894}
   - component: {fileID: 619354813768244895}
   - component: {fileID: 619354813768244892}
-  - component: {fileID: 619354813768244883}
+  - component: {fileID: -7494785584764680566}
   m_Layer: 0
   m_Name: EnemySphere
   m_TagString: Enemy5
@@ -116,7 +116,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &619354813768244883
+--- !u!114 &-7494785584764680566
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,6 +128,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb6a8b7c4cc40b24b8c228d3bb2ca4a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragoValue: 5
+  hornetValue: 5
+  mantaValue: 3
+  medusaValue: 3
+  pythonValue: 2
+  warhogValue: 2
+  capsuleValue: 2
+  sphereValue: 3
   enemyExplosionPrefab: {fileID: 2011413467132551535, guid: 4ed5e680143c62e4eb9ca3abb2c63c4b, type: 3}
-  spawnedObjects: {fileID: 0}
-  scoreManager: {fileID: 0}
+  enemyHitPrefab: {fileID: 1170180169446469085, guid: 8c5bff44860020b4594180cd972de093, type: 3}

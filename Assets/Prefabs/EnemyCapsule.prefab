@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6413455364618082508}
   - component: {fileID: 6413455364618082509}
   - component: {fileID: 6413455364618082506}
-  - component: {fileID: 6413455364618082510}
+  - component: {fileID: -8503043100265079037}
   m_Layer: 0
   m_Name: EnemyCapsule
   m_TagString: Enemy3
@@ -97,7 +97,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6413455364618082510
+--- !u!114 &-8503043100265079037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,6 +109,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb6a8b7c4cc40b24b8c228d3bb2ca4a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragoValue: 5
+  hornetValue: 5
+  mantaValue: 3
+  medusaValue: 3
+  pythonValue: 2
+  warhogValue: 2
+  capsuleValue: 2
+  sphereValue: 3
   enemyExplosionPrefab: {fileID: 2011413467132551535, guid: 4ed5e680143c62e4eb9ca3abb2c63c4b, type: 3}
-  spawnedObjects: {fileID: 0}
-  scoreManager: {fileID: 0}
+  enemyHitPrefab: {fileID: 1170180169446469085, guid: 8c5bff44860020b4594180cd972de093, type: 3}

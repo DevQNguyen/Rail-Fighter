@@ -23,7 +23,7 @@ public class CollisionHandler : MonoBehaviour
         explosionVFX.Play();
 
         // Destroy other gameObject
-        Destroy(other.gameObject);
+        Destroy(other.gameObject, 3f);
 
         // Disable player controls
         GetComponent<PlayerControls>().enabled = false;
