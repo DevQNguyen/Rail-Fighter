@@ -14,6 +14,7 @@ TagManager:
   - Medusa
   - Python
   - Warhog
+  - SpawnedObjHolder
   layers:
   - Default
   - TransparentFX

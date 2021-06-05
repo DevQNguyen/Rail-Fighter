@@ -6,22 +6,21 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private const int SingleHitValue = 1;
-
-    [SerializeField] int dragoValue = 5;
-    [SerializeField] int hornetValue = 5;
-    [SerializeField] int mantaValue = 3;
-    [SerializeField] int medusaValue = 3;
-    [SerializeField] int pythonValue = 2;
-    [SerializeField] int warhogValue = 2;
-    [SerializeField] int capsuleValue = 2;
-    [SerializeField] int sphereValue = 3;
-
+    
     [SerializeField] GameObject enemyExplosionPrefab;
     [SerializeField] GameObject enemyHitPrefab;
     GameObject spawnedObjectHolder;
     ScoreBoard scoreBoard;
     Rigidbody enemyRigidBody;
-
+    
+    int dragoValue = 5;
+    int hornetValue = 5;
+    int mantaValue = 3;
+    int medusaValue = 3;
+    int pythonValue = 2;
+    int warhogValue = 2;
+    int capsuleValue = 2;
+    int sphereValue = 3;
     int enemyScoreValue;
     int hitCount;
     bool toDestroy;
@@ -40,11 +39,11 @@ public class Enemy : MonoBehaviour
         // Add a Rigidbody to this gameObject
         AddRigidbody();
 
-        // Assign reference to SpawnObjTransforms gameObject in Heirarchy
-        spawnedObjectHolder = GameObject.Find("SpawnedObjTransforms");
+        // Assign reference to SpawnObjHolder transform type in Heirarchy
+        spawnedObjectHolder = GameObject.FindWithTag("SpawnedObjHolder");
         if (spawnedObjectHolder == null)
         {
-            Debug.Log("SpawnedObjTransforms object not found.");
+            Debug.Log("SpawnedObjHolder object not found.");
         }
     }
 
@@ -67,7 +66,7 @@ public class Enemy : MonoBehaviour
     {
         hitCount++;
 
-        PlayHitVFX();
+        HitVFXSequence();
         
         ProcessScore();
         
@@ -78,11 +77,11 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void PlayHitVFX()
+    private void HitVFXSequence()
     {
         // Instantiate the hit vfx on this gameObject
         GameObject instantiateHitVFX = Instantiate(enemyHitPrefab, transform.position, Quaternion.identity);
-        // Put this hit vfx object into the 'spawnObjectHolder.transform'
+        // Put this hit vfx object into the 'spawnObjectHolder'
         instantiateHitVFX.transform.SetParent(spawnedObjectHolder.transform);
     }
 

@@ -127,14 +127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb6a8b7c4cc40b24b8c228d3bb2ca4a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragoValue: 5
-  hornetValue: 5
-  mantaValue: 3
-  medusaValue: 3
-  pythonValue: 2
-  warhogValue: 2
-  capsuleValue: 2
-  sphereValue: 3
   enemyExplosionPrefab: {fileID: 2011413467132551535, guid: 4ed5e680143c62e4eb9ca3abb2c63c4b, type: 3}
   enemyHitPrefab: {fileID: 1170180169446469085, guid: 8c5bff44860020b4594180cd972de093, type: 3}
 --- !u!1 &2684644316484766812

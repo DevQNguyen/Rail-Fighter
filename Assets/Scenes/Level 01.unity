@@ -560,14 +560,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb6a8b7c4cc40b24b8c228d3bb2ca4a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragoValue: 5
-  hornetValue: 5
-  mantaValue: 3
-  medusaValue: 3
-  pythonValue: 2
-  warhogValue: 2
-  capsuleValue: 2
-  sphereValue: 3
   enemyExplosionPrefab: {fileID: 2011413467132551535, guid: 4ed5e680143c62e4eb9ca3abb2c63c4b, type: 3}
   enemyHitPrefab: {fileID: 1170180169446469085, guid: 8c5bff44860020b4594180cd972de093, type: 3}
 --- !u!1001 &200096172
@@ -1266,38 +1258,6 @@ PrefabInstance:
     - target: {fileID: 2690318808364541316, guid: fd86ff2389a55bc4dbb36e22f4c65def, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8330730514997654816, guid: fd86ff2389a55bc4dbb36e22f4c65def, type: 3}
-      propertyPath: dragoValue
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8330730514997654816, guid: fd86ff2389a55bc4dbb36e22f4c65def, type: 3}
-      propertyPath: mantaValue
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8330730514997654816, guid: fd86ff2389a55bc4dbb36e22f4c65def, type: 3}
-      propertyPath: hornetValue
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8330730514997654816, guid: fd86ff2389a55bc4dbb36e22f4c65def, type: 3}
-      propertyPath: medusaValue
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8330730514997654816, guid: fd86ff2389a55bc4dbb36e22f4c65def, type: 3}
-      propertyPath: pythonValue
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8330730514997654816, guid: fd86ff2389a55bc4dbb36e22f4c65def, type: 3}
-      propertyPath: sphereValue
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8330730514997654816, guid: fd86ff2389a55bc4dbb36e22f4c65def, type: 3}
-      propertyPath: warhogValue
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8330730514997654816, guid: fd86ff2389a55bc4dbb36e22f4c65def, type: 3}
-      propertyPath: capsuleValue
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd86ff2389a55bc4dbb36e22f4c65def, type: 3}
@@ -2081,14 +2041,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb6a8b7c4cc40b24b8c228d3bb2ca4a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragoValue: 5
-  hornetValue: 5
-  mantaValue: 3
-  medusaValue: 3
-  pythonValue: 2
-  warhogValue: 2
-  capsuleValue: 2
-  sphereValue: 3
   enemyExplosionPrefab: {fileID: 2011413467132551535, guid: 4ed5e680143c62e4eb9ca3abb2c63c4b, type: 3}
   enemyHitPrefab: {fileID: 1170180169446469085, guid: 8c5bff44860020b4594180cd972de093, type: 3}
 --- !u!136 &1950947276
@@ -2521,7 +2473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4594521409019148779, guid: d68266232363198479952516057d721c, type: 3}
       propertyPath: m_Name
-      value: SpawnedObjTransforms
+      value: SpawnedObjHolder
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d68266232363198479952516057d721c, type: 3}
