@@ -19,8 +19,6 @@ public class Enemy : MonoBehaviour
     int medusaValue = 3;
     int pythonValue = 2;
     int warhogValue = 2;
-    int capsuleValue = 2;
-    int sphereValue = 3;
     int enemyScoreValue;
     int hitCount;
     bool toDestroy;
@@ -130,14 +128,6 @@ public class Enemy : MonoBehaviour
             case "Warhog":
                 Debug.Log($"You hit {shipTagName}!!");
                 enemyScoreValue = warhogValue;
-                break;
-            case "Enemy3":
-                Debug.Log($"You hit {shipTagName}!!");
-                enemyScoreValue = capsuleValue;
-                break;
-            case "Enemy5":
-                Debug.Log($"You hit {shipTagName}!!");
-                enemyScoreValue = sphereValue;
                 break;
             default:
                 Debug.Log("Error, could not find object tag!");
