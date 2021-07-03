@@ -55,7 +55,7 @@ public class Enemy : MonoBehaviour
         enemyRigidBody.useGravity = false;
     }
 
-    private void OnParticleCollision(GameObject other)
+    private void OnParticleCollision()
     {
         EnemyHitSequence();
     }

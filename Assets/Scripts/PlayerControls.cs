@@ -57,7 +57,6 @@ public class PlayerControls : MonoBehaviour
         ProcessTranslation();
         ProcessRotation();
         ProcessFiring();
-   
     }
 
     void ProcessTranslation()
