@@ -417,6 +417,7 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children:
   - {fileID: -1552684646927493117}
+  - {fileID: 6124324648166514039}
   m_Clips: []
   m_Markers:
     m_Objects: []
@@ -1006,7 +1007,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: Slackbar_img
   - m_Version: 1
-    m_Start: 70.20630385487529
+    m_Start: 71.81666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 1431771289170217639}
     m_Duration: 8.527029478458047
@@ -1093,7 +1094,6 @@ MonoBehaviour:
   - {fileID: -2011907941419009164}
   - {fileID: -8324299006065292180}
   - {fileID: -6699489233992032320}
-  - {fileID: 6124324648166514039}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
@@ -1255,7 +1255,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
+  m_Parent: {fileID: -6699489233992032320}
   m_Children: []
   m_Clips:
   - m_Version: 1
@@ -1604,7 +1604,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VO_Get To The Mines
   - m_Version: 1
-    m_Start: 70.20630385487529
+    m_Start: 71.81666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 4956272899851654546}
     m_Duration: 4.256303854875283

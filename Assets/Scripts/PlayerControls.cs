@@ -32,7 +32,18 @@ public class PlayerControls : MonoBehaviour
     [Tooltip("Roll factor applied to x-throw input.")]
     [SerializeField] float rollControlFactor = -15f;
 
+    SoundEffectsPlayer SFXPlayer;
+
     float xThrow, yThrow;
+
+    private void Awake()
+    {
+        SFXPlayer = FindObjectOfType<SoundEffectsPlayer>();
+        if (SFXPlayer == null)
+        {
+            Debug.Log("SoundEffectsPlayer object not found.");
+        }
+    }
 
     void OnEnable()
     {
@@ -111,6 +122,7 @@ public class PlayerControls : MonoBehaviour
         // If firing input true
         if (firingAction.triggered)
         {
+            SFXPlayer.PlayLaserClip();
             // Grab all laser items
             foreach (GameObject laser in lasers)
             {

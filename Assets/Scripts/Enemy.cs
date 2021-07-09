@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     
     [SerializeField] GameObject enemyExplosionPrefab;
     [SerializeField] GameObject enemyHitPrefab;
+
+    SoundEffectsPlayer SFXPlayer;
     GameObject spawnedObjectHolder;
     ScoreBoard scoreBoard;
     Rigidbody enemyRigidBody;
@@ -42,6 +44,13 @@ public class Enemy : MonoBehaviour
         if (spawnedObjectHolder == null)
         {
             Debug.Log("SpawnedObjHolder object not found.");
+        }
+
+        // Assign reference to SFX AudioSource player
+        SFXPlayer = FindObjectOfType<SoundEffectsPlayer>();
+        if (SFXPlayer == null)
+        {
+            Debug.Log("SoundEffectsPlayer object not found.");
         }
     }
 
@@ -81,6 +90,10 @@ public class Enemy : MonoBehaviour
         GameObject instantiateHitVFX = Instantiate(enemyHitPrefab, transform.position, Quaternion.identity);
         // Put this hit vfx object into the 'spawnObjectHolder'
         instantiateHitVFX.transform.SetParent(spawnedObjectHolder.transform);
+
+        // ***Play single hit VFX
+        //SFXPlayer.PlayImpactClip();
+        
     }
 
     private void ProcessScore()
@@ -141,6 +154,10 @@ public class Enemy : MonoBehaviour
         GameObject instantiatedExplosion = Instantiate(enemyExplosionPrefab, transform.position, Quaternion.identity);
         // Put instantiated transform into a parent gameObject
         instantiatedExplosion.transform.SetParent(spawnedObjectHolder.transform);
+
+        // ***Play enemy explosion VFX
+        //SFXPlayer.PlayExplosionClip();
+
         // Destroy this enemy object
         Destroy(this.gameObject);
     }

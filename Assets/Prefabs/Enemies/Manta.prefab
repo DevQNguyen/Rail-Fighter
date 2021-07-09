@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 7199500410686771120}
   - component: {fileID: 7188588353498727738}
   - component: {fileID: -4414895790280022557}
+  - component: {fileID: 8490057396642432259}
   m_Layer: 0
   m_Name: Manta
   m_TagString: Manta
@@ -183,16 +184,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb6a8b7c4cc40b24b8c228d3bb2ca4a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragoValue: 5
-  hornetValue: 5
-  mantaValue: 3
-  medusaValue: 3
-  pythonValue: 2
-  warhogValue: 2
-  capsuleValue: 2
-  sphereValue: 3
   enemyExplosionPrefab: {fileID: 2011413467132551535, guid: 4ed5e680143c62e4eb9ca3abb2c63c4b, type: 3}
   enemyHitPrefab: {fileID: 1170180169446469085, guid: 8c5bff44860020b4594180cd972de093, type: 3}
+--- !u!65 &8490057396642432259
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7175794853929284580}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.926745, y: 5.1440196, z: 13.02625}
+  m_Center: {x: -0.00000047683713, y: -0.0000005960464, z: 0}
 --- !u!1 &7175830760627690224
 GameObject:
   m_ObjectHideFlags: 0

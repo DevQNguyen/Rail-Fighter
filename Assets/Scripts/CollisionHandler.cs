@@ -12,6 +12,17 @@ public class CollisionHandler : MonoBehaviour
     [Tooltip("Float value for number of seconds to delay before reloading scene.")]
     [SerializeField] float reloadDelay = 1f;
 
+    SoundEffectsPlayer audioPlayer;
+
+    private void Start()
+    {
+        audioPlayer = FindObjectOfType<SoundEffectsPlayer>();
+        if (audioPlayer == null)
+        {
+            Debug.Log("SoundEffectsPlayer object not found.");
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         CrashSequence(other);
@@ -19,6 +30,9 @@ public class CollisionHandler : MonoBehaviour
 
     private void CrashSequence(Collider other)
     {
+        // ***Play explosion SFX
+        audioPlayer.PlayExplosionClip();
+        
         // Play Player Ship explosion particles
         explosionVFX.Play();
 

@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 6328797321557413168}
   - component: {fileID: 6337257697934647232}
   - component: {fileID: 7698343179289552514}
+  - component: {fileID: 1161744266002771473}
   m_Layer: 0
   m_Name: Python
   m_TagString: Python
@@ -183,16 +184,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb6a8b7c4cc40b24b8c228d3bb2ca4a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragoValue: 5
-  hornetValue: 5
-  mantaValue: 3
-  medusaValue: 3
-  pythonValue: 2
-  warhogValue: 2
-  capsuleValue: 2
-  sphereValue: 3
   enemyExplosionPrefab: {fileID: 2011413467132551535, guid: 4ed5e680143c62e4eb9ca3abb2c63c4b, type: 3}
   enemyHitPrefab: {fileID: 1170180169446469085, guid: 8c5bff44860020b4594180cd972de093, type: 3}
+--- !u!65 &1161744266002771473
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6315504443540567480}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.491302, y: 2.80775, z: 10.850525}
+  m_Center: {x: 0, y: -0.000005662441, z: 0.0000011920929}
 --- !u!1 &6315552841636668956
 GameObject:
   m_ObjectHideFlags: 0

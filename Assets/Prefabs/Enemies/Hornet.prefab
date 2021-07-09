@@ -188,6 +188,7 @@ GameObject:
   - component: {fileID: 6325601537813893388}
   - component: {fileID: 6334533546937907904}
   - component: {fileID: -6297339974366366112}
+  - component: {fileID: 4516799793454366528}
   m_Layer: 0
   m_Name: Hornet
   m_TagString: Hornet
@@ -271,16 +272,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb6a8b7c4cc40b24b8c228d3bb2ca4a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragoValue: 5
-  hornetValue: 5
-  mantaValue: 3
-  medusaValue: 3
-  pythonValue: 2
-  warhogValue: 2
-  capsuleValue: 2
-  sphereValue: 3
   enemyExplosionPrefab: {fileID: 2011413467132551535, guid: 4ed5e680143c62e4eb9ca3abb2c63c4b, type: 3}
   enemyHitPrefab: {fileID: 1170180169446469085, guid: 8c5bff44860020b4594180cd972de093, type: 3}
+--- !u!65 &4516799793454366528
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6321243682298256754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.638825, y: 3.2560527, z: 10.850526}
+  m_Center: {x: 0, y: -0.0000007748603, z: 0}
 --- !u!1 &6321593388797840468
 GameObject:
   m_ObjectHideFlags: 0

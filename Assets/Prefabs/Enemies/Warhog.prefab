@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 2680423662738908752}
   - component: {fileID: 2671018470882116468}
   - component: {fileID: 8330730514997654816}
+  - component: {fileID: 3593831469052298446}
   m_Layer: 0
   m_Name: Warhog
   m_TagString: Warhog
@@ -129,6 +130,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyExplosionPrefab: {fileID: 2011413467132551535, guid: 4ed5e680143c62e4eb9ca3abb2c63c4b, type: 3}
   enemyHitPrefab: {fileID: 1170180169446469085, guid: 8c5bff44860020b4594180cd972de093, type: 3}
+--- !u!65 &3593831469052298446
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2684389753717324516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.2209473, y: 3.4400399, z: 13.842939}
+  m_Center: {x: 0, y: -0.0000104904175, z: 0}
 --- !u!1 &2684644316484766812
 GameObject:
   m_ObjectHideFlags: 0
