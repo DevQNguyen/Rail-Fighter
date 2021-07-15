@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2671018470882116468}
   - component: {fileID: 8330730514997654816}
   - component: {fileID: 3593831469052298446}
+  - component: {fileID: 5610187988650026992}
   m_Layer: 0
   m_Name: Warhog
   m_TagString: Warhog
@@ -61,7 +62,7 @@ Transform:
   m_GameObject: {fileID: 2684389753717324516}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 392.9, y: 132.68, z: 361.46}
-  m_LocalScale: {x: 3, y: 2.5, z: 2}
+  m_LocalScale: {x: 2, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 2687042461123532564}
   m_Father: {fileID: 0}
@@ -139,10 +140,29 @@ BoxCollider:
   m_GameObject: {fileID: 2684389753717324516}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 6.2209473, y: 3.4400399, z: 13.842939}
   m_Center: {x: 0, y: -0.0000104904175, z: 0}
+--- !u!95 &5610187988650026992
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2684389753717324516}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2684644316484766812
 GameObject:
   m_ObjectHideFlags: 0

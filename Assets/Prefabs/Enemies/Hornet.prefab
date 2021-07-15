@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 6334533546937907904}
   - component: {fileID: -6297339974366366112}
   - component: {fileID: 4516799793454366528}
+  - component: {fileID: 410910633}
   m_Layer: 0
   m_Name: Hornet
   m_TagString: Hornet
@@ -283,10 +284,29 @@ BoxCollider:
   m_GameObject: {fileID: 6321243682298256754}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 13.638825, y: 3.2560527, z: 10.850526}
   m_Center: {x: 0, y: -0.0000007748603, z: 0}
+--- !u!95 &410910633
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6321243682298256754}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6321593388797840468
 GameObject:
   m_ObjectHideFlags: 0
