@@ -8,7 +8,7 @@ public class SoundEffectsPlayer : MonoBehaviour
     [SerializeField] AudioClip impactClip;
     [SerializeField] AudioClip explosionClip;
 
-    [SerializeField] float laserVol = 0.5f;
+    [SerializeField] float laserVol = 0.75f;
     [SerializeField] float impactVol = 0.5f;
     [SerializeField] float explosionVol = 0.75f;
 
